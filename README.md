@@ -9,4 +9,7 @@ Calculte the number of 1s in an integer.
 2. GCD.cpp   
 Calculate the greate common dividor of two integers.
 3. boolFlip.cpp  
-Flip the value of a bool variable, by using XOR `^` and NOT `!`.
+Flip the value of a bool variable, by using XOR `^` and NOT `!`.  
+4. argumentsIntoStack  
+An example to show that arguments are stored in a stack.
+
