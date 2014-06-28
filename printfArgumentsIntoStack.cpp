@@ -7,9 +7,11 @@ int main()
 	int *ptr = arr;
 	*(ptr++) += 123;
 	
-	// printf() read from left to right, the first read arguments go to bottom of the stack,
-        // the last read arguments go to top of the stack, and then the arguments are popped out.
-        // that is the order of the arguments are dealt from right to left.
- 	printf("%d,%d\n", *ptr, *(++ptr));
+	// printf() read from right to left, the first read argument goes to top of the stack,
+        // the last read argument goes to bottom of the stack, and then the arguments are popped out.
+        // in the following code, the second argument is calculated before pushed into the stack.
+        // there are five types of push arguments into stack. More info:
+        // http://www.cnblogs.com/xkfz007/archive/2012/03/27/2420158.html
+        printf("%d,%d\n", *ptr, *(++ptr));
 	return 0;
 }
